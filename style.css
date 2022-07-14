@@ -18,6 +18,28 @@ body{
   background-color: var(--Dark-Blue);
 }
 
+footer {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  box-shadow: -2px 0 3px 2px rgb(153, 153, 153);
+}
+
+footer h1 {
+  font-size: 20px;
+  color: rgb(143, 143, 143);
+  font-weight: 100;
+  line-height: 50px;
+  text-align: center;
+}
+
+a {
+  color: rgb(255, 255, 255);
+}
+
 main{
   background-color: var(--Dark-Grayish-Blue);
   width: 540px;
