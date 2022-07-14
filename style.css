@@ -11,6 +11,7 @@
   font-weight: bold;
   text-align: center;
   font-family: 'Manrope', sans-serif;
+  box-sizing: border-box;
 }
 
 body{
@@ -19,21 +20,20 @@ body{
 
 main{
   background-color: var(--Dark-Grayish-Blue);
-  width: 455px;
-  padding: 0 44px;
+  width: 540px;
+  padding: 26px 44px 0 44px;
   position:relative;
   left: 50vw;
   top: 50vh;
   transform: translate(-50%, -50%);
   border-radius: 10px;
-  padding-top: 26px;
 }
 
 p{
   color: var(--Neon-Green);
   letter-spacing: 5px;
   font-weight: 17px;
-  margin: 26px;
+  margin-bottom: 26px;
 }
 
 blockquote{
@@ -70,4 +70,41 @@ button{
 
 button:hover{
   box-shadow: 0 0 20px 2px var(--Neon-Green) ;
+}
+
+@media(max-width: 600px){
+  main{
+    width: calc(100vw - 30px);
+    padding: 26px 33px 0 33px;
+  }
+
+  .divisor-desktop{
+    display: none;
+  }
+
+  .divisor-mobile{
+    display: inline;
+    margin: 32px auto 59.5px auto;
+  }
+
+}
+
+@media(max-width: 400px){
+  main{
+    width: calc(100vw - 20px);
+    padding: 26px 10px 0 10px;
+  }
+
+  p{
+    font-size: 15px;
+  }
+
+  blockquote{
+    color: var(--Light-Cyan);
+    font-size: 20px;
+  }
+
+  .divisor-mobile{
+    width: calc(100vw - 40px);
+  }
 }
