@@ -1,0 +1,73 @@
+:root {
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+}
+
+*{
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+}
+
+body{
+  background-color: var(--Dark-Blue);
+}
+
+main{
+  background-color: var(--Dark-Grayish-Blue);
+  width: 455px;
+  padding: 0 44px;
+  position:relative;
+  left: 50vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding-top: 26px;
+}
+
+p{
+  color: var(--Neon-Green);
+  letter-spacing: 5px;
+  font-weight: 17px;
+  margin: 26px;
+}
+
+blockquote{
+  color: var(--Light-Cyan);
+  font-size: 28px;
+}
+
+
+.divisor-desktop{
+  margin: 32px 0 59.5px 0;
+}
+
+.divisor-mobile{
+  
+  display: none;
+}
+
+button{
+  display: block;
+  border: none;
+  background-image: url('images/icon-dice.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--Neon-Green);
+  border-radius: 50%;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  box-shadow: 1px 1px 12px --Neon-Green;
+}
+
+button:hover{
+  box-shadow: 0 0 20px 2px var(--Neon-Green) ;
+}
